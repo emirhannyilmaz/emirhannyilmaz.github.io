@@ -1,0 +1,484 @@
+<title>Cake Shop — Privacy Policy / Gizlilik Politikası</title>
+<style>
+  @media (prefers-color-scheme: dark) {}
+
+  :root {
+    --bg: #fbf7f4;
+    --bg-wash: #f4ecf1;
+    --surface: #ffffff;
+    --text: #2a1830;
+    --text-muted: #6d5b76;
+    --accent: #7b2d8b;
+    --accent-strong: #5c1f68;
+    --accent-soft: #f2e3f6;
+    --border: #e7dae9;
+    --shadow: 0 1px 2px rgba(60, 20, 70, 0.06), 0 8px 24px -12px rgba(60, 20, 70, 0.18);
+    --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1220;
+      --bg-wash: #221828;
+      --surface: #241a2c;
+      --text: #f3e9f5;
+      --text-muted: #b9a6c2;
+      --accent: #e2a3ec;
+      --accent-strong: #efc0f5;
+      --accent-soft: #33223c;
+      --border: #3a2a44;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.45);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1a1220;
+    --bg-wash: #221828;
+    --surface: #241a2c;
+    --text: #f3e9f5;
+    --text-muted: #b9a6c2;
+    --accent: #e2a3ec;
+    --accent-strong: #efc0f5;
+    --accent-soft: #33223c;
+    --border: #3a2a44;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.45);
+  }
+  :root[data-theme="light"] {
+    --bg: #fbf7f4;
+    --bg-wash: #f4ecf1;
+    --surface: #ffffff;
+    --text: #2a1830;
+    --text-muted: #6d5b76;
+    --accent: #7b2d8b;
+    --accent-strong: #5c1f68;
+    --accent-soft: #f2e3f6;
+    --border: #e7dae9;
+    --shadow: 0 1px 2px rgba(60, 20, 70, 0.06), 0 8px 24px -12px rgba(60, 20, 70, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, var(--bg-wash), var(--bg) 340px);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent-strong); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px clamp(16px, 4vw, 40px);
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+  .brand .dot { color: var(--accent); }
+
+  .langswitch {
+    display: inline-flex;
+    padding: 3px;
+    background: var(--accent-soft);
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+  }
+  .langswitch button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--text-muted);
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font: inherit;
+  }
+  .langswitch button[aria-pressed="true"] {
+    background: var(--accent);
+    color: var(--surface);
+  }
+
+  main { max-width: 720px; margin: 0 auto; padding: clamp(28px, 6vw, 56px) clamp(16px, 4vw, 40px) 80px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-strong);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(1.9rem, 4.5vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  .dek { color: var(--text-muted); font-size: 1.05rem; max-width: 60ch; margin: 0 0 22px; }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+    font-variant-numeric: tabular-nums;
+  }
+  .meta-row strong { color: var(--text); font-weight: 600; }
+
+  .tldr {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 22px clamp(18px, 4vw, 28px);
+    margin: 0 0 40px;
+  }
+  .tldr h2 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    margin: 0 0 14px;
+    font-weight: 600;
+  }
+  .tldr dl {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px 20px;
+    margin: 0;
+  }
+  @media (min-width: 560px) {
+    .tldr dl { grid-template-columns: 1fr 1fr; }
+  }
+  .tldr .row { display: flex; flex-direction: column; gap: 2px; }
+  .tldr dt { font-size: 0.78rem; color: var(--text-muted); }
+  .tldr dd { margin: 0; font-weight: 600; font-size: 0.96rem; }
+  .tldr dd.no { color: var(--text); }
+  .tldr dd.yes-note { color: var(--accent-strong); }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    padding: 16px 0 36px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 0.8rem;
+  }
+  nav.toc a { color: var(--text-muted); }
+  nav.toc a:hover { color: var(--accent-strong); }
+
+  article section { padding: 30px 0; border-bottom: 1px solid var(--border); }
+  article section:last-of-type { border-bottom: 0; }
+  section h2 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 14px;
+    scroll-margin-top: 76px;
+  }
+  section h2 .num {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  section h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+  section p { margin: 0 0 14px; max-width: 66ch; }
+  section ul { margin: 0 0 14px; padding-left: 1.2em; }
+  section li { margin-bottom: 6px; max-width: 62ch; }
+  section p:last-child, section ul:last-child { margin-bottom: 0; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 0.92rem;
+    color: var(--text);
+    margin: 0 0 14px;
+  }
+  .callout strong { color: var(--accent-strong); }
+
+  table.perm {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin: 4px 0 14px;
+  }
+  table.perm th, table.perm td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  table.perm th { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+
+  footer {
+    margin-top: 46px;
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+  footer .contact { font-family: var(--mono); color: var(--text); }
+  footer p { max-width: 62ch; }
+
+  [data-lang-block] { display: none; }
+  body[data-lang="tr"] [data-lang-block="tr"] { display: block; }
+  body[data-lang="en"] [data-lang-block="en"] { display: block; }
+  .topbar [data-lang-block] { display: none; }
+  body[data-lang="tr"] .topbar [data-lang-block="tr"] { display: inline; }
+  body[data-lang="en"] .topbar [data-lang-block="en"] { display: inline; }
+</style>
+
+<div class="topbar">
+  <div class="brand"><span class="dot">●</span>&nbsp;Cake Shop <span style="color:var(--text-muted); font-weight:400; font-family: var(--sans); font-size: 0.85rem;">
+    <span data-lang-block="tr">— Gizlilik Politikası</span><span data-lang-block="en">— Privacy Policy</span>
+  </span></div>
+  <div class="langswitch" role="group" aria-label="Language / Dil">
+    <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+    <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ TÜRKÇE ============ -->
+  <article data-lang-block="tr">
+    <p class="eyebrow">Yasal Metin</p>
+    <h1>Cake Shop Gizlilik Politikası</h1>
+    <p class="dek">Cake Shop, iOS ve Android için hazırlanmış, hesap gerektirmeyen bir pasta yapım oyunudur. Bu sayfa, oyunu oynarken hangi verilerin nerede tutulduğunu ve reklam hizmetinin nasıl çalıştığını açık şekilde anlatır.</p>
+    <div class="meta-row">
+      <span>Yürürlük tarihi: <strong>25 Temmuz 2026</strong></span>
+      <span>Son güncelleme: <strong>25 Temmuz 2026</strong></span>
+      <span>Uygulama: <strong>com.emirhanyilmaz.cakeshop</strong></span>
+    </div>
+
+    <div class="tldr">
+      <h2>Kısaca</h2>
+      <dl>
+        <div class="row"><dt>Hesap / kayıt gerekir mi?</dt><dd class="no">Hayır</dd></div>
+        <div class="row"><dt>Sunucularımıza veri gönderilir mi?</dt><dd class="no">Hayır — hiç sunucumuz yok</dd></div>
+        <div class="row"><dt>Cihazında saklanan veri</dt><dd>Sadece seviye ve yıldız sayın</dd></div>
+        <div class="row"><dt>Üçüncü taraf reklam</dt><dd class="yes-note">Evet — Google AdMob</dd></div>
+        <div class="row"><dt>Çocuklara kişiselleştirilmiş reklam</dt><dd class="no">Hayır</dd></div>
+        <div class="row"><dt>Verini tamamen silmek için</dt><dd>Uygulamayı kaldırman yeterli</dd></div>
+      </dl>
+    </div>
+
+    <nav class="toc" aria-label="İçindekiler">
+      <a href="#tr-1">1. Kim topluyor</a>
+      <a href="#tr-2">2. Cihazında saklananlar</a>
+      <a href="#tr-3">3. Reklamlar</a>
+      <a href="#tr-4">4. Çocukların gizliliği</a>
+      <a href="#tr-5">5. İzinler</a>
+      <a href="#tr-6">6. Haklarının</a>
+      <a href="#tr-7">7. Değişiklikler</a>
+      <a href="#tr-8">8. İletişim</a>
+    </nav>
+
+    <section>
+      <h2 id="tr-1"><span class="num">1</span>Bu politikayı kim uyguluyor</h2>
+      <p>Cake Shop, bağımsız geliştirici Emirhan Yılmaz tarafından geliştirilir ve yayımlanır. Bu belge, oyunu App Store veya Google Play üzerinden indirdiğinde hangi verilerin işlendiğini açıklar. Oyunun kendi işlettiği hiçbir sunucu, veritabanı veya hesap sistemi yoktur.</p>
+    </section>
+
+    <section>
+      <h2 id="tr-2"><span class="num">2</span>Cihazında saklanan veriler</h2>
+      <p>Cake Shop'ta isim, e-posta, telefon numarası veya benzeri bir bilgi hiçbir zaman istenmez. Oyun ilerlemeni (mevcut seviye ve toplam yıldız sayın) yalnızca telefonunun kendi yerel depolama alanında (<code>localStorage</code>) tutar.</p>
+      <div class="callout">Bu veri hiçbir sunucuya gönderilmez, bizimle veya üçüncü bir tarafla paylaşılmaz. Uygulamayı silmen veya uygulama verilerini temizlemen, bu kaydı da tamamen ve geri dönülemez şekilde siler.</div>
+    </section>
+
+    <section>
+      <h2 id="tr-3"><span class="num">3</span>Reklamlar ve Google AdMob</h2>
+      <p>Oyunun geliştirilmesini sürdürebilmek için Google AdMob aracılığıyla banner (yalnızca ana menüde) ve tam ekran (belirli sayıda sipariş tamamlandığında) reklamlar gösteriyoruz. Reklam sunumu sırasında AdMob; cihaz türü, işletim sistemi, kabaca IP tabanlı bölge ve reklamla etkileşim (gösterim, tıklama) gibi teknik bilgileri kendi altyapısında işleyebilir.</p>
+      <p>Cake Shop çocuklara yönelik bir oyun olduğu için reklam istekleri <strong>çocuğa yönelik (child-directed)</strong> olarak işaretlenir ve reklam içerik derecesi "Genel" ile sınırlanır. Bu, ilgi alanına dayalı kişiselleştirilmiş reklamcılık için kullanılan tanımlayıcıların devre dışı bırakılması anlamına gelir — uygulama, Apple'ın izin isteyen takip (App Tracking Transparency) diyaloğunu göstermez çünkü kullanıcıları uygulamalar arasında takip etmeyiz.</p>
+      <p>AdMob'un veri işleme pratikleri hakkında ayrıntılı bilgiyi Google'ın kendi belgelerinde bulabilirsin: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Ortak site/uygulamalardan gelen bilgilerin kullanımı</a>.</p>
+    </section>
+
+    <section>
+      <h2 id="tr-4"><span class="num">4</span>Çocukların gizliliği</h2>
+      <p>Cake Shop, çocukların da rahatlıkla oynayabileceği şekilde tasarlanmıştır: metin okuma gerektirmez, tüm etkileşim görsellerle anlatılır. Geliştirici olarak çocuklardan doğrudan hiçbir kişisel bilgi talep etmiyor, toplamıyoruz. Reklam altyapısı, yukarıda açıklandığı gibi çocuğa yönelik ayarlarla çalışır. Bir ebeveyn olarak çocuğunuzun oyun kullanımıyla ilgili bir sorunuz varsa 8. bölümdeki adresten bize ulaşabilirsiniz.</p>
+    </section>
+
+    <section>
+      <h2 id="tr-5"><span class="num">5</span>Cihaz izinleri</h2>
+      <table class="perm">
+        <thead><tr><th>İzin</th><th>Kullanılıyor mu</th><th>Neden</th></tr></thead>
+        <tbody>
+          <tr><td>İnternet</td><td>Evet</td><td>Yalnızca reklamların yüklenmesi için — oyunun kendisi çevrimdışı çalışır</td></tr>
+          <tr><td>Kamera / Mikrofon</td><td>Hayır</td><td>—</td></tr>
+          <tr><td>Konum</td><td>Hayır</td><td>—</td></tr>
+          <tr><td>Rehber / Fotoğraflar</td><td>Hayır</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2 id="tr-6"><span class="num">6</span>Haklarınız</h2>
+      <p>Geliştirici olarak seninle ilgili kişisel veri toplamadığımız için 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki erişim/silme taleplerinin büyük kısmı bizim elimizdeki veriler açısından zaten geçerli değildir — çünkü elimizde işlenecek bir veri yoktur. Google AdMob'un kendi işlediği teknik veriler için reklam kişiselleştirme ayarlarını cihazının sistem ayarlarından (Android: Google Ayarları → Reklamlar; iOS: Ayarlar → Gizlilik ve Güvenlik → Reklamlar) veya <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a> üzerinden yönetebilirsin.</p>
+    </section>
+
+    <section>
+      <h2 id="tr-7"><span class="num">7</span>Bu politikadaki değişiklikler</h2>
+      <p>Oyun güncellendikçe bu politika da gerektiğinde güncellenir. Değişiklik olduğunda sayfanın üstündeki "Son güncelleme" tarihi yenilenir. Önemli değişikliklerde uygulama içi bir bildirimle de haber verilecektir.</p>
+    </section>
+
+    <section>
+      <h2 id="tr-8"><span class="num">8</span>İletişim</h2>
+      <p>Gizlilikle ilgili sorular, talepler veya geri bildirimler için:</p>
+      <p class="contact" style="font-family: var(--mono); font-size: 1.05rem;">emirhanra@gmail.com</p>
+    </section>
+
+    <footer>
+      <p>Bu sayfa genel bilgilendirme amaçlıdır ve hukuki danışmanlık yerine geçmez. Uygulamanı belirli bir ülkede yayınlamadan önce yerel mevzuata (KVKK, GDPR, COPPA vb.) uygunluğu bir hukuk danışmanına teyit ettirmen önerilir.</p>
+    </footer>
+  </article>
+
+  <!-- ============ ENGLISH ============ -->
+  <article data-lang-block="en">
+    <p class="eyebrow">Legal</p>
+    <h1>Cake Shop Privacy Policy</h1>
+    <p class="dek">Cake Shop is a cake-decorating memory game for iOS and Android that requires no account. This page explains, in plain language, what data is kept and where, and how advertising works inside the app.</p>
+    <div class="meta-row">
+      <span>Effective date: <strong>July 25, 2026</strong></span>
+      <span>Last updated: <strong>July 25, 2026</strong></span>
+      <span>App: <strong>com.emirhanyilmaz.cakeshop</strong></span>
+    </div>
+
+    <div class="tldr">
+      <h2>The short version</h2>
+      <dl>
+        <div class="row"><dt>Account or sign-up required?</dt><dd class="no">No</dd></div>
+        <div class="row"><dt>Data sent to our servers?</dt><dd class="no">No — we don't run any servers</dd></div>
+        <div class="row"><dt>Stored on your device</dt><dd>Only your level and star count</dd></div>
+        <div class="row"><dt>Third-party ads</dt><dd class="yes-note">Yes — Google AdMob</dd></div>
+        <div class="row"><dt>Personalized ads for kids?</dt><dd class="no">No</dd></div>
+        <div class="row"><dt>To delete everything</dt><dd>Just uninstall the app</dd></div>
+      </dl>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <a href="#en-1">1. Who controls this</a>
+      <a href="#en-2">2. What's stored on-device</a>
+      <a href="#en-3">3. Advertising</a>
+      <a href="#en-4">4. Children's privacy</a>
+      <a href="#en-5">5. Device permissions</a>
+      <a href="#en-6">6. Your choices</a>
+      <a href="#en-7">7. Changes</a>
+      <a href="#en-8">8. Contact</a>
+    </nav>
+
+    <section>
+      <h2 id="en-1"><span class="num">1</span>Who this policy covers</h2>
+      <p>Cake Shop is developed and published by independent developer Emirhan Yılmaz. This page explains what happens to data when you download and play the game from the App Store or Google Play. The game does not run any servers, databases, or account systems of its own.</p>
+    </section>
+
+    <section>
+      <h2 id="en-2"><span class="num">2</span>What's stored on your device</h2>
+      <p>Cake Shop never asks for your name, email, phone number, or anything similar. The game keeps your progress — your current level and total star count — only in your phone's own local storage (<code>localStorage</code>).</p>
+      <div class="callout">This data is never transmitted anywhere and is never shared with us or any third party. Uninstalling the app, or clearing the app's storage, permanently deletes it.</div>
+    </section>
+
+    <section>
+      <h2 id="en-3"><span class="num">3</span>Advertising &amp; Google AdMob</h2>
+      <p>To help fund continued development, we show banner ads (menu screen only) and occasional full-screen ads (after a set number of completed orders) through Google AdMob. To serve these ads, AdMob may process technical information on its own infrastructure, such as device type, operating system, coarse IP-based region, and ad interaction data (impressions, clicks).</p>
+      <p>Because Cake Shop is a children's game, all ad requests are flagged as <strong>child-directed</strong> and content is limited to the "General" rating. This disables identifiers used for interest-based, personalized advertising — the app never shows Apple's App Tracking Transparency prompt, because we don't track users across other apps or websites.</p>
+      <p>For details on how Google handles this data, see Google's own documentation: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.</p>
+    </section>
+
+    <section>
+      <h2 id="en-4"><span class="num">4</span>Children's privacy</h2>
+      <p>Cake Shop is built so that children can play it comfortably on their own: it requires no reading, and every interaction is communicated visually. As the developer, we do not knowingly collect any personal information directly from children. Our advertising setup is configured for child-directed treatment as described above. If you're a parent with a question about your child's use of the game, reach us at the address in section 8.</p>
+    </section>
+
+    <section>
+      <h2 id="en-5"><span class="num">5</span>Device permissions</h2>
+      <table class="perm">
+        <thead><tr><th>Permission</th><th>Used?</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Internet</td><td>Yes</td><td>Only to load ads — the game itself works fully offline</td></tr>
+          <tr><td>Camera / Microphone</td><td>No</td><td>—</td></tr>
+          <tr><td>Location</td><td>No</td><td>—</td></tr>
+          <tr><td>Contacts / Photos</td><td>No</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2 id="en-6"><span class="num">6</span>Your choices</h2>
+      <p>Since we don't collect personal data about you directly, most access/deletion requests simply don't apply to anything we hold — there's nothing on our side to access or delete. For the technical data Google AdMob processes on its own, you can manage ad personalization from your device's system settings (Android: Google Settings → Ads; iOS: Settings → Privacy &amp; Security → Ads) or at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</p>
+    </section>
+
+    <section>
+      <h2 id="en-7"><span class="num">7</span>Changes to this policy</h2>
+      <p>We'll update this page whenever the game's data practices change, and refresh the "Last updated" date above accordingly. Significant changes will also be flagged with an in-app notice.</p>
+    </section>
+
+    <section>
+      <h2 id="en-8"><span class="num">8</span>Contact</h2>
+      <p>For privacy questions, requests, or feedback:</p>
+      <p class="contact" style="font-family: var(--mono); font-size: 1.05rem;">emirhanra@gmail.com</p>
+    </section>
+
+    <footer>
+      <p>This page is provided for general information and isn't a substitute for legal advice. Before publishing in a specific country, confirm compliance with local requirements (GDPR, COPPA, KVKK, and similar) with qualified counsel.</p>
+    </footer>
+  </article>
+
+</main>
+
+<script>
+  (function () {
+    var KEY = 'cakeshop-privacy-lang';
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    var initial = saved || (navigator.language && navigator.language.toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+    var buttons = document.querySelectorAll('[data-set-lang]');
+
+    function apply(lang) {
+      document.body.setAttribute('data-lang', lang);
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === lang));
+      });
+      try { localStorage.setItem(KEY, lang); } catch (e) {}
+    }
+
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { apply(b.getAttribute('data-set-lang')); });
+    });
+
+    apply(initial);
+  })();
+</script>
